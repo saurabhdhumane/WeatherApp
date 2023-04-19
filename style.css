@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    /* vertically */
+    justify-content: center;
+    /* horizontally */
+    width: 100%;
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+#search {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px grey;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Adjust the layout for screens smaller than 768px */
+    
+    /* Center the search input */
+    #search {
+      margin: auto;
+      display: block;
+    }
+    
+    /* Make the weather display stack vertically */
+    #weather div {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+    
+    /* Reduce the font size of the temperature display */
+    #weather h2 {
+      font-size: 2rem;
+    }
+    
+    /* Make the table scroll horizontally */
+    #details {
+      overflow-x: auto;
+    }
+    
+    /* Reduce the font size of the table headers */
+    #details th {
+      font-size: 0.8rem;
+    }
+  }
+  
