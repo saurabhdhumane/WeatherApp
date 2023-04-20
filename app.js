@@ -111,7 +111,7 @@ form.addEventListener(
     }
 )
 
-getWeather("Pune")
+getWeather("Wardha")
 
 
 
